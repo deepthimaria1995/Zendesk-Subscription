@@ -20,15 +20,4 @@ $ npm start
 
 - Your index.html page will be available on URL http://localhost:5000/
 
-### Main Component Description
-
-- ```app.js``` : Program entry point, prime implementation and controls the flow of the program.
-- ```Subscription.js``` : Creates the subscription UI layout.
-- ```UtilityHelper.js``` : Functions which deal with the error,show/hide of DOM elements.
-- ```PlanDetails.js``` : Containes the Plan details of the subscription of the product.
-
-### Further Enhancement
-- https://github.com/deepthimaria1995/Zendesk-Coding-Challenge -> This project includes disabling of Update Subscription button if invalid seat count is given(non numeric values). The program throws an error inside a pop up box.
-- https://github.com/deepthimaria1995/Zendesk-Coding-Challenge-1 -> This project includes future enhancements which support multiple currency.
-
 
