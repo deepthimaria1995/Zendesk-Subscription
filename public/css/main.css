@@ -1,0 +1,359 @@
+body,
+select,
+option {
+  font-family: 'Calibri';
+  color: rgb(46, 117, 182);
+}
+
+select {
+  border-color: rgb(46, 117, 182);
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Calibri';
+  text-decoration: underline;
+  text-align: center;
+  color: rgb(46, 117, 182);
+}
+
+.currency-section {
+  width: 700px;
+  height: 50px;
+  font-size: 25px;
+  display: inline-block;
+  margin-left: 175px;
+}
+
+.curr-list {
+  font-size: 20px;
+  height: 40px;
+}
+
+.product-section {
+  height: 80px;
+  margin-left: 140px;
+}
+
+.product {
+  height: 50px;
+  width: 200px;
+  margin: 15px 0px 15px 40px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: 'Calibri';
+  font-weight: bold;
+  background-color: rgb(46, 117, 182);
+  color: rgb(255, 255, 255);
+}
+
+.product.selected {
+  border-color: rgb(46, 117, 182);
+  background-color: rgb(255, 255, 255);
+  color: rgb(46, 117, 182);
+}
+
+.plan-section {
+  height: 380px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.plan-container {
+  height: 350px;
+  width: 300px;
+  display: inline-block;
+  background-color: rgb(46, 117, 182);
+  border-width: 2px;
+  border-style: solid;
+  border: rgb(46, 117, 182);
+  margin: 0 20px 0 20px;
+}
+
+.plan-container.current {
+  pointer-events : none;
+}
+
+.plan-container.selected {
+  background-color: rgb(255, 255, 255);
+  border: rgb(46, 117, 182);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.plan-indicator-section {
+  height: 30px;
+  padding-top: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(46, 117, 182);
+}
+
+.plan-indicator-section.current {
+  background-color: rgb(255, 255, 255);
+}
+
+.plan-indicator-section.selected {
+  background-color: rgb(46, 117, 182);
+}
+
+.indicator {
+  font-family: 'Calibri';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 117, 182);
+}
+
+.indicator.current {
+  background-color: rgb(255, 255, 255);
+  color: rgb(46, 117, 182);
+}
+
+
+.indicator.selected {
+  background-color: rgb(46, 117, 182);
+  color: rgb(255, 255, 255);
+}
+
+.plan-name-section {
+  height: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+
+
+.plan-name-section.selected {
+  color: rgb(46, 117, 182);
+}
+
+.plan-cost-section {
+  height: 70px;
+  padding-top: 25px;
+  font-family: 'Berlin Sans FB';
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+.plan-cost-section.selected {
+  color: rgb(46, 117, 182);
+}
+
+.plan-seat-section {
+  height: 40px;
+  padding-bottom: 10px;
+}
+
+.line {
+  width: 80%;
+  height: 3px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+.line.selected {
+  color: rgb(46, 117, 182);
+  background-color: rgb(46, 117, 182);
+}
+
+.currency {
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.cost-per-seat {
+  font-size: 50px;
+}
+
+.quantity {
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 117, 182);
+  font-weight: bold;
+  font-size: 30px;
+  border: none;
+  max-width: 70px;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.quantity.selected {
+  color: rgb(46, 117, 182);
+  background-color: rgb(255, 255, 255);
+}
+
+.plan-total-price {
+  font-family: 'Berlin Sans FB';
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.plan-total-price.selected {
+  color: rgb(46, 117, 182);
+}
+
+input[type='number'] {
+  appearance: textfield;
+  vertical-align: bottom;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.plan-seat-section button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  box-shadow: 0px 0px 2px rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.btn.selected {
+  border-color: rgb(46, 117, 182);
+  box-shadow: 0px 0px 2px rgb(46, 117, 182);
+}
+
+.plan-seat-section button:before,
+.plan-seat-section button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 1rem;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+}
+
+.btn.selected:before,
+.btn.selected:after {
+  background-color: rgb(46, 117, 182);
+}
+
+.plan-seat-section button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.update-btn, .back-btn {
+  height: 50px;
+  width: 300px;
+  font-family: 'Calibri';
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 117, 182);
+  border-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  margin:auto;
+  display:block;
+}
+
+.update-btn:disabled {
+  background-color: grey;
+}
+
+#summary-page {
+  margin-top: 80px;
+  text-align: center;
+}
+
+h4 {
+  font-weight: 100;
+  font-size: 35px;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.chosen-product{
+  color: rgb(46, 117, 182);
+  font-size: 40px;
+}
+
+.column {
+  margin-top: 20px;
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  margin-left: 25px;
+  border-radius: 20px;
+  border: rgb(46, 117, 182);
+  border-style: solid;
+  color: rgb(46, 117, 182);
+  font-size: 35px;
+}
+
+.new.column {
+  background-color: #40a829;
+  border-color: #40a829;
+  color: rgb(255, 255, 255);
+}
+
+.row {
+  padding-left: 50px;
+  padding-bottom: 10px;
+  text-align: justify;
+  height: 40px;
+}
+
+span.label {
+  display: inline-block;
+  width: 75px;
+}
+
+.value {
+  padding-left: 30px;
+  font-size: 25px;
+  font-size: 40px;
+}
+
+.value.updated {
+  font-size: 25px;
+  font-size: 40px;
+}
+
+.done-page-button-section {
+  margin-top: 30px;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
